@@ -3,6 +3,7 @@
     "target": "es2016",
     "module": "commonjs",    
     "rootDir": "./",
+
     "baseUrl": "./src",
     "paths": {
       "@modules/*": ["modules/*"],
@@ -12,6 +13,7 @@
       "@utils/*": ["utils/*"]
     },
     "esModuleInterop": true,
+    
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true, 
     "skipLibCheck": true,
