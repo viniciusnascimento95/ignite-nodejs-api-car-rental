@@ -44,7 +44,7 @@ class ImportCategoryUseCase {
         // console.log(file);
 
         const categories = await this.loadCategories(file);
-        console.log(categories);
+        // console.log(categories);
 
         categories.map(async (category) => {
             const { name, description } = category;

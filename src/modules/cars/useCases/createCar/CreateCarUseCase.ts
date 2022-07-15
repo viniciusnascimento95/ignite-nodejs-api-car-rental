@@ -35,7 +35,7 @@ class CreateCarUseCase {
         );
 
         if (carAlreadyExists) {
-            throw new AppError("Car already exists", 401);
+            throw new AppError("Car already exists");
         }
 
         const car = await this.carsRepository.create({

@@ -1,8 +1,8 @@
 import { ICreateRentalDTO } from "@modules/rentals/dtos/ICreateRentalDTO";
 import { Rental } from "@modules/rentals/infra/typeorm/entities/Rental";
-import { IRentalRepository } from "../IRentalsRepository";
+import { IRentalsRepository } from "../IRentalsRepository";
 
-class RentalsRepositoryInMemory implements IRentalRepository {
+class RentalsRepositoryInMemory implements IRentalsRepository {
     rentals: Rental[] = [];
 
     async findOpenRentalByCar(car_id: string): Promise<Rental> {
